@@ -4,7 +4,6 @@ import App from './page.vue';
 
 const createApp = (context) => {
     const app = new Vue({
-        el: '#app',
         components: {
             App,
         },

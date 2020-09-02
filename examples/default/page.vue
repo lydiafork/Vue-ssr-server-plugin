@@ -1,7 +1,6 @@
 <template>
     <div
-        id="app"
-        class="product-wrap"
+        class="page-wrap"
     >
         <div>page2 test</div>
     </div>

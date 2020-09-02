@@ -1,0 +1,132 @@
+@base: 46.875rem;
+html, body {
+    min-height: 100%;
+    background: #F2F2F2;
+}
+
+#app {
+    padding:20/@base 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .product-list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        li {
+            float:left;
+            width: 220/@base;
+            height: 220/@base;
+            margin:5/@base;
+        }
+        img {
+            width: 220/@base;
+            height: 220/@base;
+        }
+    }
+    .block-list {
+        position: absolute;
+        left:0;
+        top:20/@base;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        li {
+            float:left;
+            display: block;
+            width: 220/@base;
+            height: 220/@base;
+            margin:5/@base;
+            position: relative;
+            .top {
+                position: absolute;
+                top:0;
+                left:0;
+                display: block;
+                width:0;
+                height:0;
+                border-left:110/@base solid transparent;
+                border-right:110/@base solid transparent;
+                border-top:110/@base solid rgba(51,51,51,0.7);
+            }
+            .bottom {
+                position: absolute;
+                top:110/@base;
+                left:0;
+                display: block;
+                width:0;
+                height:0;
+                border-right:110/@base solid transparent;
+                border-left:110/@base solid transparent;
+                border-bottom:110/@base solid rgba(51,51,51,0.7); 
+            }
+            .left {
+                position: absolute;
+                top:0;
+                left:0;
+                display: block;
+                width:0;
+                height:0;
+                border-top:110/@base solid transparent;
+                border-bottom:110/@base solid transparent;
+                border-left:110/@base solid rgba(51,51,51,0.7); 
+            }
+            .right {
+                position: absolute;
+                top:0;
+                left:110/@base;
+                display: block;
+                width:0;
+                height:0;
+                border-top:110/@base solid transparent;
+                border-bottom:110/@base solid transparent;
+                border-right:110/@base solid rgba(51,51,51,0.7); 
+            }
+            .buy {
+                font-size: 24/@base;
+                background:#f24d63;
+                position: absolute;
+                top:90/@base;
+                left:55/@base;
+                border: 2/@base solid #ffffff;
+                border-radius: 10/@base;
+                width:110/@base;
+                height:40/@base;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:#ffffff;      
+            }
+        }
+    }
+    .share-btn {
+        margin-top:30/@base;
+        font-size:36/@base;
+        font-weight: bold;
+        background:#f24d63;
+        border: 2/@base solid #ffffff;
+        border-radius: 10/@base;
+        width:400/@base;
+        height:100/@base;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#ffffff;
+    }
+}
