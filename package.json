@@ -1,0 +1,39 @@
+{
+  "name": "vue-server-plugin",
+  "version": "1.0.0",
+  "description": "Vue server render plugin for muti-entry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:plugin": "webpack --config webpack.plugin.js --mode production",
+    "build-examples": "node examples/build-example.js",
+    "start-example": "node examples/default/app.js"
+  },
+  "keywords": [
+    "vue.js"
+  ],
+  "author": "zml",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.11.5",
+    "autoprefixer": "^9.8.6",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.1.0",
+    "chalk": "^4.1.0",
+    "commonjs2": "^1.0.0",
+    "koa": "^2.13.0",
+    "koa-router": "^9.4.0",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.3",
+    "vue-server-renderer": "^2.6.12",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.1"
+  },
+  "browserslist": [
+    "android >= 4.0",
+    "ios_saf >= 7.0"
+  ],
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
+}
